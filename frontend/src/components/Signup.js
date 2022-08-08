@@ -40,7 +40,7 @@ const Signup = (props) => {
     <div className="container mt-2">
       <h2 className="my-2">Create an account to use iNotebook</h2>
       <form onSubmit={handleSubmit}>
-        <div className="mb-3" style={{ width: "48rem" }}>
+        <div className="mb-3" style={{ width: "35rem" }}>
           <label htmlFor="name" className="form-label">
             Name
           </label>
@@ -53,7 +53,7 @@ const Signup = (props) => {
             aria-describedby="emailHelp"
           />
         </div>
-        <div className="mb-3" style={{ width: "48rem" }}>
+        <div className="mb-3" style={{ width: "35rem" }}>
           <label htmlFor="email" className="form-label">
             Email address
           </label>
@@ -69,7 +69,7 @@ const Signup = (props) => {
             We'll never share your email with anyone else.
           </div>
         </div>
-        <div className="mb-3" style={{ width: "48rem" }}>
+        <div className="mb-3" style={{ width: "35rem" }}>
           <label htmlFor="password" className="form-label">
             Password
           </label>
@@ -83,7 +83,7 @@ const Signup = (props) => {
             required
           />
         </div>
-        <div className="mb-3" style={{ width: "48rem" }}>
+        <div className="mb-3" style={{ width: "35rem" }}>
           <label htmlFor="cpassword" className="form-label">
             Confirm Password
           </label>

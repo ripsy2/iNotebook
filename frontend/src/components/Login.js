@@ -50,7 +50,7 @@ const Login = (props) => {
             id="email"
             name="email"
             aria-describedby="emailHelp"
-            style={{ width: "48rem" }}
+            style={{ width: "35rem" }}
           />
           <div id="emailHelp" className="form-text">
             We'll never share your email with anyone else.
@@ -67,7 +67,7 @@ const Login = (props) => {
             onChange={onChange}
             id="password"
             name="password"
-            style={{ width: "48rem" }}
+            style={{ width: "35rem" }}
           />
         </div>
         <button type="submit" className="btn btn-danger">
