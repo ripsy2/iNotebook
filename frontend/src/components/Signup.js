@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import "./Login.css";
 
 const Signup = (props) => {
   const [credentials, setCredentials] = useState({
@@ -37,11 +38,17 @@ const Signup = (props) => {
     setCredentials({ ...credentials, [e.target.name]: e.target.value });
   };
   return (
-    <div className="container mt-2">
-      <h2 className="my-2">Create an account to use iNotebook</h2>
+    <div className="login container mt-2">
+      <h2 className="my-2" style={{ fontWeight: "bold", fontStyle: "italic" }}>
+        Create an account to use iNotebook
+      </h2>
       <form onSubmit={handleSubmit}>
-        <div className="mb-3" style={{ width: "35rem" }}>
-          <label htmlFor="name" className="form-label">
+        <div className="my-3" style={{ width: "35rem" }}>
+          <label
+            htmlFor="name"
+            className="form-label"
+            style={{ fontStyle: "italic" }}
+          >
             Name
           </label>
           <input
@@ -54,7 +61,11 @@ const Signup = (props) => {
           />
         </div>
         <div className="mb-3" style={{ width: "35rem" }}>
-          <label htmlFor="email" className="form-label">
+          <label
+            htmlFor="email"
+            className="form-label"
+            style={{ fontStyle: "italic" }}
+          >
             Email address
           </label>
           <input
@@ -70,7 +81,11 @@ const Signup = (props) => {
           </div>
         </div>
         <div className="mb-3" style={{ width: "35rem" }}>
-          <label htmlFor="password" className="form-label">
+          <label
+            htmlFor="password"
+            className="form-label"
+            style={{ fontStyle: "italic" }}
+          >
             Password
           </label>
           <input
@@ -84,7 +99,11 @@ const Signup = (props) => {
           />
         </div>
         <div className="mb-3" style={{ width: "35rem" }}>
-          <label htmlFor="cpassword" className="form-label">
+          <label
+            htmlFor="cpassword"
+            className="form-label"
+            style={{ fontStyle: "italic" }}
+          >
             Confirm Password
           </label>
           <input
@@ -97,9 +116,13 @@ const Signup = (props) => {
             required
           />
         </div>
-        <button type="submit" className="btn btn-danger">
-          Signup
-        </button>
+        <div class="form-row text-center">
+          <div class="btn-padding-y d-grid gap-2 col-3 mx-auto">
+            <button type="submit" className="btn btn-danger">
+              Signup
+            </button>
+          </div>
+        </div>
       </form>
     </div>
   );
