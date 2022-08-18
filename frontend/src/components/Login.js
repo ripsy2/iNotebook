@@ -81,8 +81,8 @@ const Login = (props) => {
             style={{ width: "35rem" }}
           />
         </div>
-        <div class="form-row text-center">
-          <div class="btn-padding-y d-grid gap-2 col-3 mx-auto">
+        <div className="form-row text-center">
+          <div className="btn-padding-y d-grid gap-2 col-3 mx-auto">
             <button type="submit" className="btn btn-danger">
               Login
             </button>
